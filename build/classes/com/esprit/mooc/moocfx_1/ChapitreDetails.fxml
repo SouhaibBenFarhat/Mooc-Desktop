@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="paneData" prefHeight="660.0" prefWidth="1033.0" style="-fx-background-color: #0097A7;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="38.0" prefHeight="457.0" prefWidth="734.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow color="#8a8a8a" height="15.0" radius="7.0" width="15.0" />
+         </effect>
+         <children>
+            <ImageView layoutX="-25.0" layoutY="58.0">
+               <image>
+                  <Image url="@../ressources/exe2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labeltitre" layoutX="146.0" layoutY="9.0" text="Titre" textFill="#00aec1">
+               <font>
+                  <Font name="Berlin Sans FB" size="27.0" />
+               </font>
+            </Label>
+            <MediaView fx:id="video" fitHeight="230.0" fitWidth="560.0" layoutX="160.0" layoutY="68.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <viewport>
+                  <Rectangle2D height="230.0" width="560.0" />
+               </viewport>
+            </MediaView>
+            <ImageView fitHeight="86.0" fitWidth="115.0" layoutX="4.0" layoutY="86.0">
+               <image>
+                  <Image url="@../ressources/format.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="106.0" layoutX="10.0" layoutY="180.0">
+               <image>
+                  <Image url="@../ressources/Form.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="dateajout" layoutX="150.0" layoutY="38.0" text="Date de création:" textFill="#00aec1">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="160.0" layoutY="324.0" prefHeight="124.0" prefWidth="500.0" style="-fx-background-color: #EDF7FC;">
+               <children>
+                  <ImageView layoutX="-17.0" layoutY="-15.0">
+                     <image>
+                        <Image url="@../ressources/Capture.PNG" />
+                     </image>
+                  </ImageView>
+                  <WebView fx:id="descripchap" layoutX="30.0" layoutY="2.0" prefHeight="116.0" prefWidth="456.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="username" layoutX="20.0" layoutY="62.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="129.0" layoutX="3.0" layoutY="223.0">
+               <image>
+                  <Image url="@../ressources/derniereconnex.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="username1" layoutX="9.0" layoutY="232.0" text="Date du dernière connexion:" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateconx" layoutX="32.0" layoutY="255.0" text="20/05/2015" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="132.0" layoutY="-35.0" prefHeight="25.0" prefWidth="592.0" style="-fx-background-color: #fff;">
+               <effect>
+                  <DropShadow height="15.0" radius="7.0" width="15.0" />
+               </effect>
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="6.0" layoutY="2.0">
+                     <image>
+                        <Image url="@../ressources/notification-circle-blue-512.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Notificate" layoutX="43.0" layoutY="4.0" prefHeight="17.0" prefWidth="535.0" text="Notification" textFill="#00aec1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="N" fitHeight="22.0" fitWidth="31.0" layoutX="302.0" layoutY="2.0">
+                     <image>
+                        <Image url="@../ressources/elephant.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="38.0" layoutY="76.0" text="Date de création:" textFill="#00aec1">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="36.0" layoutY="74.0" opacity="0.46" prefWidth="500.0" />
+      <Label layoutX="35.0" layoutY="46.0" text="Titre :" textFill="#00aec1">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="28.0" layoutY="503.0" prefHeight="153.0" prefWidth="734.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect>
+         <children>
+            <WebView fx:id="contenuchap" layoutX="28.0" layoutY="7.0" prefHeight="140.0" prefWidth="697.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="770.0" layoutY="503.0" prefHeight="153.0" prefWidth="264.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect></AnchorPane>
+      <Button fx:id="preschap" layoutX="799.0" layoutY="533.0" mnemonicParsing="false" onAction="#ConvertPresChap" prefHeight="57.0" prefWidth="57.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/pdfIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="779.0" layoutY="596.0" text="Presentation Chapitre" textFill="#0097a7">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="922.0" layoutY="596.0" text="Contenu Chapitre" textFill="#0097a7">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="42.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="contenubutton" layoutX="931.0" layoutY="533.0" mnemonicParsing="false" onAction="#ConvertContenuChapPDF" prefHeight="57.0" prefWidth="57.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/pdfIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="771.0" layoutY="37.0" prefHeight="457.0" prefWidth="264.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect>
+      </AnchorPane>
+      <Label fx:id="labeltitre1" layoutX="772.0" layoutY="52.0" text="Chapitres:" textFill="#0097a7">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvchap" layoutX="773.0" layoutY="86.0" onMouseClicked="#ClickTableView" prefHeight="409.0" prefWidth="256.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/listView2.css" />
+      <Separator layoutX="770.0" layoutY="80.0" opacity="0.46" prefHeight="3.0" prefWidth="256.0" />
+      <AnchorPane layoutX="771.0" layoutY="2.0" prefHeight="31.0" prefWidth="264.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect>
+      </AnchorPane>
+      <TextField fx:id="recherchechap" layoutX="846.0" layoutY="4.0" onKeyReleased="#RechercheChapitre" prefHeight="25.0" prefWidth="186.0" />
+      <Label layoutX="776.0" layoutY="11.0" text="Recherche:" textFill="#0097a7">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="Bonnechance" layoutX="23.0" layoutY="-14.0" prefHeight="67.0" prefWidth="145.0">
+         <children>
+            <ImageView fx:id="bulleinfo" fitHeight="42.0" fitWidth="111.0" layoutX="25.0" layoutY="13.0">
+               <image>
+                  <Image url="@../ressources/BulleInfo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="elephant" fitHeight="42.0" fitWidth="42.0" layoutX="6.0" layoutY="13.0">
+               <image>
+                  <Image url="@../ressources/16.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="chance" layoutX="45.0" layoutY="23.0" text="Bonne chance" textFill="#00aec1">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

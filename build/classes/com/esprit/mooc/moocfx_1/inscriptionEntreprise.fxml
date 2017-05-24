@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="1093.0" styleClass="page1" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+      <AnchorPane layoutX="14.0" prefHeight="612.0" prefWidth="1093.0">
+         <children>
+            <AnchorPane fx:id="inscri2Pane" layoutX="21.0" layoutY="16.0" prefHeight="575.0" prefWidth="1035.0" visible="false">
+               <children>
+            <TextField fx:id="specialiteText" layoutX="143.0" layoutY="74.0" prefHeight="33.0" prefWidth="305.0" promptText="Specialite" />
+            <TextField fx:id="siteWebText" layoutX="143.0" layoutY="118.0" prefHeight="33.0" prefWidth="305.0" promptText="Site web" />
+            <TextField fx:id="abreviationText" layoutX="143.0" layoutY="212.0" prefHeight="34.0" prefWidth="305.0" promptText="Abbreviation" />
+            <Button fx:id="btnChoisir" layoutX="945.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnChoisirAttestationAction" text="Choose" />
+            <TextField fx:id="adresseText" layoutX="620.0" layoutY="71.0" prefHeight="34.0" prefWidth="305.0" promptText="Adress" />
+            <TextField fx:id="matriculeText" layoutX="143.0" layoutY="259.0" prefHeight="34.0" prefWidth="305.0" promptText="Matricule Fiscale" />
+            <TextArea fx:id="descriptionText" layoutX="620.0" layoutY="259.0" prefHeight="158.0" prefWidth="305.0" />
+            <ComboBox fx:id="comboPays" layoutX="620.0" layoutY="119.0" prefHeight="33.0" prefWidth="305.0" promptText="Selectionner votre Pays" />
+            <TextField fx:id="attestationText" editable="false" layoutX="620.0" layoutY="213.0" prefHeight="33.0" prefWidth="305.0" promptText=" Selectionner votre attestation" />
+            <TextField fx:id="raisonInscriptionText" layoutX="620.0" layoutY="165.0" prefHeight="34.0" prefWidth="305.0" promptText="Raison d'Inscription" />
+            <TextField fx:id="telText" layoutX="143.0" layoutY="165.0" prefHeight="33.0" prefWidth="305.0" promptText="Telephone" />
+                  <Text fx:id="lblSpecialite" fill="WHITE" layoutX="18.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialite :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblSiteWeb" fill="WHITE" layoutX="17.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Site  web : ">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblNumeroTel" fill="WHITE" layoutX="15.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblAbreviation" fill="WHITE" layoutX="17.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Abbreviation : ">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblAdresse" fill="WHITE" layoutX="481.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse : ">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblPays" fill="WHITE" layoutX="479.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pays :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblMatricule" fill="WHITE" layoutX="14.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule Fiscale" wrappingWidth="123.00000211969018">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblRaison" fill="WHITE" layoutX="480.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raison d'Inscription" wrappingWidth="107.44531976431608">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblAttestation" fill="WHITE" layoutX="478.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attestation :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblDescription" fill="WHITE" layoutX="477.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnInscription" layoutX="461.0" layoutY="484.0" mnemonicParsing="false" onAction="#inscriptionEntreprisePartie2Action" prefHeight="30.0" prefWidth="123.0" text="Inscription" />
+                  <Text fx:id="lblType" fill="WHITE" layoutX="14.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type : ">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="comboType" layoutX="143.0" layoutY="307.0" prefHeight="33.0" prefWidth="305.0" promptText="Selectionner votre type" />
+         </children>
+      </AnchorPane>
+            <AnchorPane fx:id="inscri1Pane" layoutX="315.0" layoutY="198.0" prefHeight="284.0" prefWidth="568.0">
+               <children>
+                  <Text fx:id="lblPassword" fill="WHITE" layoutY="84.734375" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe  :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="imageText" editable="false" layoutX="113.0" layoutY="153.0" prefHeight="34.0" prefWidth="305.0" promptText="photo" />
+                  <Text fx:id="lblPhoto" fill="WHITE" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo  :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnChoisirPhoto" layoutX="439.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnChoisirPhotoAction" prefHeight="30.0" prefWidth="123.0" text="Choisir" />
+                  <TextField fx:id="usernameText" layoutX="114.0" layoutY="22.0" prefHeight="33.0" prefWidth="305.0" promptText="Utilisateur" />
+                  <PasswordField fx:id="passwordText" layoutX="114.0" layoutY="64.0" prefHeight="33.0" prefWidth="305.0" promptText="Mot de Passe" />
+                   <TextField fx:id="emailText" layoutX="114.0" layoutY="106.0" prefHeight="34.0" prefWidth="305.0" promptText="Email" />
+                  <Text fx:id="lblUsername" fill="WHITE" layoutY="46.734375" strokeType="OUTSIDE" strokeWidth="0.0" text="Utilisateur :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblEmail" fill="WHITE" layoutY="127.734375" strokeType="OUTSIDE" strokeWidth="0.0" text="Email  :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnNextStep" layoutX="296.0" layoutY="201.0" mnemonicParsing="false" onAction="#inscriptionEntreprisePartie1Action" prefHeight="30.0" prefWidth="123.0" text="Suivant" />
+               </children>
+            </AnchorPane>
+             <Text fx:id="lblUserLogin" fill="WHITE" layoutX="444.0" layoutY="62.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Entreprise" wrappingWidth="279.9296875">
+         <font>
+                  <Font name="Segoe UI Light" size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="label" layoutX="356.0" layoutY="534.0" prefHeight="34.0" prefWidth="434.0" />
+            <HBox layoutX="997.0" layoutY="6.0" stylesheets="@../css/winDec.css">
+               <children>
+                  <Button fx:id="minimize" mnemonicParsing="false" onAction="#menuminimize" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="-fx-border-color: #0097A7;" styleClass="decoration-button-minimize" text="" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="close" mnemonicParsing="false" onAction="#menuClose" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="-fx-border-color: #0097A7;" styleClass="decoration-button-close" text="" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="btnLogout" layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#menuLogout" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/buttonCircle.css">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/arrowLeft.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+   </children>
+</AnchorPane>
+  </children>
+</AnchorPane>

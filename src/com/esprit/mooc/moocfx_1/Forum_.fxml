@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1000.0" minHeight="634.0" minWidth="1000.0" prefHeight="634.0" prefWidth="1000.0" style="-fx-background-color: white;" styleClass="page1" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.mooc.controllers.ForumController">
+   <children>
+      <SplitPane dividerPositions="0.21342685370741482" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="798.0" prefWidth="188.0" style="-fx-background-color: white;" SplitPane.resizableWithParent="false">
+               <children>
+                  <SplitPane dividerPositions="0.09365079365079365" layoutX="63.0" layoutY="111.0" orientation="VERTICAL" prefHeight="798.0" prefWidth="301.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ECECEC;" SplitPane.resizableWithParent="false">
+                           <children>
+                              <TextField fx:id="chercherForumText" layoutX="13.0" layoutY="11.0" onKeyPressed="#chercherForum" onKeyTyped="#chercherForum" prefHeight="24.0" prefWidth="181.0" promptText="Search here" style="-fx-background-color: white;" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: white;" SplitPane.resizableWithParent="false">
+                           <children>
+                              <TableView fx:id="forumTable" onMouseClicked="#selectTable" prefHeight="687.0" prefWidth="299.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="nomForum" prefWidth="206.0" text="Forum" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: white;" SplitPane.resizableWithParent="false">
+               <children>
+                  <TabPane prefHeight="398.0" prefWidth="471.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab fx:id="sujet" text="Sujets">
+                           <content>
+                              <SplitPane dividerPositions="0.736318407960199" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="594.0">
+                                       <children>
+                                          <TitledPane layoutX="47.0" layoutY="91.0" prefHeight="382.0" prefWidth="691.0" text="Forum" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <SplitPane dividerPositions="0.12289156626506025" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                                                  <items>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: white;">
+                                                         <children>
+                                                            <TextField fx:id="chercherSujetText" layoutX="22.0" layoutY="9.0" onKeyPressed="#chercherSujet" onKeyTyped="#chercherSujet" promptText="Search here" />
+                                                            <Button fx:id="detailsButton" layoutX="187.0" layoutY="9.0" mnemonicParsing="false" onAction="#afficherMessageSujet" text="Afficher les messages" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                         <children>
+                                                            <SplitPane dividerPositions="0.32390745501285345" layoutX="160.0" layoutY="46.0" prefHeight="308.0" prefWidth="689.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                              <items>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <TableView fx:id="sujetTable" editable="true" onMouseClicked="#selectSujetTable" prefHeight="306.0" prefWidth="374.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+                                                                          <columns>
+                                                                            <TableColumn fx:id="titreSujet" prefWidth="137.0" text="Sujet" />
+                                                                              <TableColumn fx:id="datePublicationSujet" prefWidth="149.0" text="Date Publication" />
+                                                                          </columns>
+                                                                           <columnResizePolicy>
+                                                                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                                           </columnResizePolicy>
+                                                                        </TableView>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="297.0">
+                                                                     <children>
+                                                                        <TitledPane animated="false" layoutX="35.0" layoutY="7.0" prefHeight="306.0" prefWidth="311.0" text="Description" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                          <content>
+                                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                                 <children>
+                                                                                    <HTMLEditor fx:id="contenuSujet" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="-249.0" layoutY="11.0" prefHeight="280.0" prefWidth="309.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                                 </children>
+                                                                              </AnchorPane>
+                                                                          </content>
+                                                                        </TitledPane>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                              </items>
+                                                            </SplitPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </items>
+                                                </SplitPane>
+                                             </content>
+                                          </TitledPane>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="332.0" prefWidth="691.0" style="-fx-background-color: white;">
+                                       <children>
+                                          <TextArea fx:id="descriptionSujetTexte" layoutX="185.0" layoutY="14.0" prefHeight="96.0" prefWidth="541.0" promptText="Rédiger votre sujet" />
+                                          <TextField fx:id="soustitreSujetTexte" layoutX="15.0" layoutY="86.0" promptText="Sous-titre" />
+                                          <TextField fx:id="titreSujetTexte" layoutX="15.0" layoutY="49.0" promptText="Titre sujet" />
+                                          <Button fx:id="publierButton" layoutX="14.0" layoutY="124.0" mnemonicParsing="false" onAction="#ajouterSujet" prefHeight="25.0" prefWidth="89.0" text="Publier" textFill="#000000bc" />
+                                          <ComboBox fx:id="forumCombo" layoutX="14.0" layoutY="14.0" prefWidth="150.0" promptText="Choisir un forum" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </content></Tab>
+                      <Tab fx:id="mesSujets" text="Mes sujets">
+                           <content>
+                              <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <TitledPane animated="false" layoutX="105.0" layoutY="39.0" prefHeight="299.0" prefWidth="782.0" text="Mes sujets" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <HTMLEditor fx:id="mesSujetContenuSujet" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="14.0" layoutY="48.0" prefHeight="273.0" prefWidth="780.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </TitledPane>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: white;">
+                                       <children>
+                                          <SplitPane dividerPositions="0.4115384615384615" layoutX="133.0" layoutY="69.0" prefHeight="298.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TableView fx:id="mesSujets2" layoutX="36.0" layoutY="36.0" onMouseClicked="#selectTableMesSujets" prefHeight="296.0" prefWidth="318.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                        <columns>
+                                                          <TableColumn fx:id="mesSujetsTitreSujet" prefWidth="75.0" text="Titre" />
+                                                          <TableColumn fx:id="mesSujetDatePublicationSujet" prefWidth="75.0" text="Date publication" />
+                                                        </columns>
+                                                         <columnResizePolicy>
+                                                            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                         </columnResizePolicy>
+                                                      </TableView>
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane fx:id="editAnchor" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: white;">
+                                                   <children>
+                                                      <TextField fx:id="titreSujetMesSujet" layoutX="12.0" layoutY="27.0" prefHeight="25.0" prefWidth="280.0" promptText="Titre Sujet..." />
+                                                      <TextField fx:id="sousTitreSujetMesSujet" layoutX="12.0" layoutY="67.0" prefHeight="25.0" prefWidth="280.0" promptText="Sous-titre..." />
+                                                      <Button fx:id="editButton" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" onAction="#editSujet" prefHeight="25.0" prefWidth="80.0" text="Edit" />
+                                                      <Button fx:id="supprimerButton" layoutX="14.0" layoutY="192.0" mnemonicParsing="false" onAction="#supprimerSujet" prefHeight="25.0" prefWidth="81.0" text="Supprimer" />
+                                                      <Button fx:id="afficherLesMessage" layoutX="14.0" layoutY="109.0" mnemonicParsing="false" onAction="#mesSujetAfficherMessageSujet" prefHeight="25.0" prefWidth="138.0" text="Afficher les messages" />
+                                                   </children></AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children></AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </content></Tab>
+                        <Tab text="Statistique">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.008319467554076539" layoutX="114.0" layoutY="116.0" orientation="VERTICAL" prefHeight="603.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: white;">
+                                             <children>
+                                                <PieChart fx:id="pieChar" layoutX="37.0" layoutY="-101.0" prefHeight="279.0" prefWidth="780.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Mes interventions">
+                           <content>
+                              <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                </items>
+                              </SplitPane>
+                           </content></Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

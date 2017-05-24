@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="358.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane fx:id="paneCour" layoutX="7.0" layoutY="7.0" prefHeight="135.0" prefWidth="345.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label layoutX="84.0" layoutY="9.0" prefHeight="19.0" prefWidth="68.0" text="Title" textAlignment="RIGHT" textFill="#00aec1">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="labelTitre" layoutX="164.0" layoutY="9.0" prefHeight="19.0" prefWidth="157.0" textAlignment="JUSTIFY" textFill="#00aec1">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets left="5.0" right="5.0" />
+                    </opaqueInsets>
+                </Label>
+                <Button fx:id="btnAjout" layoutX="277.0" layoutY="85.0" mnemonicParsing="false" onAction="#Ajouterbibliotheque" prefHeight="33.0" prefWidth="33.0" style="-fx-background-color: #ffffff;">
+                    <graphic>
+                        <ImageView fx:id="Ajout" fitHeight="38.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../ressources/ajout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnCour" layoutY="9.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="84.0" style="-fx-background-color: #FFFFFF;">
+                    <graphic>
+                        <ImageView fx:id="IMGdiscipline" fitHeight="78.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnSuprim" layoutX="277.0" layoutY="85.0" mnemonicParsing="false" onAction="#SupprimerBibliotheque" prefHeight="33.0" prefWidth="33.0" style="-fx-background-color: #FFFFFF;">
+                    <graphic>
+                        <ImageView fx:id="Supprim" fitHeight="38.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../ressources/reject.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label layoutX="84.0" layoutY="39.0" prefHeight="19.0" prefWidth="68.0" text="Realise par" textAlignment="RIGHT" textFill="#00aec1">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="labelrealise" layoutX="173.0" layoutY="39.0" prefHeight="19.0" prefWidth="157.0" textAlignment="JUSTIFY" textFill="#00aec1">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets left="5.0" right="5.0" />
+                    </opaqueInsets>
+                </Label>
+                <Button fx:id="btnLire" layoutX="26.0" layoutY="93.0" mnemonicParsing="false" onAction="#LireLaSuiteCours" prefHeight="33.0" prefWidth="138.0" style="-fx-background-color: #FFFFFF;">
+                    <graphic>
+                        <ImageView fx:id="lireLaSuiteIMG" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../ressources/mod_ls-8545976.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label fx:id="labelnbrVu" layoutX="178.0" layoutY="66.0" prefHeight="19.0" prefWidth="157.0" textAlignment="JUSTIFY" textFill="#00aec1">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets left="5.0" right="5.0" />
+                    </opaqueInsets>
+                </Label>
+                <Label fx:id="labelnbrVu1" layoutX="83.0" layoutY="66.0" prefHeight="19.0" prefWidth="96.0" text="Nombre de Vu" textAlignment="JUSTIFY" textFill="#00aec1">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets left="5.0" right="5.0" />
+                    </opaqueInsets>
+                </Label>
+                <Button fx:id="accepted" layoutX="173.0" layoutY="86.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="96.0" style="-fx-background-color: #FFFFFF;">
+                    <graphic>
+                        <ImageView fx:id="lireLaSuiteIMG1" fitHeight="33.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../ressources/courAccepted.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="refused" layoutX="187.0" layoutY="84.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="68.0" style="-fx-background-color: #FFFFFF;">
+                    <graphic>
+                        <ImageView fx:id="lireLaSuiteIMG11" fitHeight="38.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../ressources/courRefused.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="waiting" layoutX="197.0" layoutY="83.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="68.0" style="-fx-background-color: #FFFFFF;">
+                    <graphic>
+                        <ImageView fx:id="lireLaSuiteIMG111" fitHeight="38.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../ressources/wait.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            <Button fx:id="btnSuprimCour" layoutX="287.0" layoutY="82.0" mnemonicParsing="false" onAction="#SupprimerRefusedCour" prefHeight="33.0" prefWidth="33.0" style="-fx-background-color: #FFFFFF;">
+               <graphic>
+                  <ImageView fx:id="Supprim1" fitHeight="38.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/reject.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnRefuseCour" layoutX="204.0" layoutY="82.0" mnemonicParsing="false" onAction="#RefusedCour" prefHeight="33.0" prefWidth="33.0" style="-fx-background-color: #FFFFFF;">
+               <graphic>
+                  <ImageView fx:id="Supprim11" fitHeight="38.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/error.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAcceptCour" layoutX="283.0" layoutY="82.0" mnemonicParsing="false" onAction="#AcceptCour" prefHeight="33.0" prefWidth="33.0" style="-fx-background-color: #FFFFFF;">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/accept-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnLireComite" layoutX="25.0" layoutY="94.0" mnemonicParsing="false" onAction="#LireLaSuiteCoursComite" prefHeight="33.0" prefWidth="138.0" style="-fx-background-color: #FFFFFF;">
+               <graphic>
+                  <ImageView fx:id="lireLaSuiteIMG2" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/mod_ls-8545976.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="meschapitres" layoutX="288.0" layoutY="1.0" mnemonicParsing="false" onAction="#voirlistechap" prefHeight="39.0" prefWidth="33.0" style="-fx-background-color: #fff;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="37.0">
+                     <image>
+                        <Image url="@../ressources/experience-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnModifier" layoutX="32.0" layoutY="95.0" mnemonicParsing="false" onAction="#ModifierCours" prefHeight="33.0" prefWidth="138.0" style="-fx-background-color: #FFFFFF;" visible="false">
+               <graphic>
+                  <ImageView fx:id="ModifierCours" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/modifsou.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Pane>
+    </children>
+</AnchorPane>

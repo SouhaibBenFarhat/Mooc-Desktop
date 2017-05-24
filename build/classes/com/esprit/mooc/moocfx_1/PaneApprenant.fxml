@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="358.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="paneUser" layoutX="7.0" layoutY="7.0" prefHeight="135.0" prefWidth="345.0" style="-fx-background-color: #00aec1; -fx-background-radius: 4;">
+         <children>
+            <Label fx:id="labelNom" layoutX="96.0" layoutY="18.0" prefHeight="19.0" prefWidth="84.0" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="labelEmail" layoutX="97.0" layoutY="40.0" prefHeight="19.0" prefWidth="118.0" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Button fx:id="btnUnlock" layoutX="112.0" layoutY="85.0" mnemonicParsing="false" style="-fx-background-color: #00aec1;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/unlock.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnLock" layoutX="171.0" layoutY="84.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="33.0" style="-fx-background-color: #00aec1;">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/lock.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnProfil" layoutY="9.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="84.0" style="-fx-background-color: #00aec1;">
+               <graphic>
+                  <ImageView fx:id="image" fitHeight="86.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/student.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="95.0" fitWidth="78.0" layoutX="265.0" layoutY="2.0" nodeOrientation="RIGHT_TO_LEFT" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/actorsDesign.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D width="500.0" />
+               </viewport>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

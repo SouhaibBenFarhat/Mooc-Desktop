@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="571.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="Controllers.EspaceFormateurController">
+    <stylesheets>
+        <URL value="@/css/espaceformateur.css" />
+    </stylesheets>
+   <children>
+      <MenuBar layoutX="6.0" layoutY="8.0" prefHeight="34.0" prefWidth="315.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Mon profil">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Mes cours">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="liste des entreprises">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="136.0" layoutY="110.0" prefHeight="69.0" prefWidth="279.0" text="EspaceFormateur" />
+   </children>
+</AnchorPane>

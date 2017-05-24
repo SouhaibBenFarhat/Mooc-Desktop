@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="358.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="paneForum" layoutX="7.0" layoutY="7.0" prefHeight="135.0" prefWidth="345.0" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+         <children>
+            <Label fx:id="forumName" layoutX="84.0" layoutY="9.0" prefHeight="19.0" prefWidth="198.0" text="Forum" textAlignment="RIGHT" textFill="#00ace1">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font></Label>
+            <Button fx:id="btnForum" layoutX="232.0" layoutY="103.0" mnemonicParsing="false" onAction="#afficherSujets" prefHeight="19.0" prefWidth="99.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/readmore.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fx:id="image" fitHeight="78.0" fitWidth="68.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="nombreVue" layoutX="124.0" layoutY="42.0" prefHeight="19.0" prefWidth="114.0" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Segoe UI Light" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="87.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/date.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="date" layoutX="130.0" layoutY="77.0" prefHeight="19.0" prefWidth="99.0" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Segoe UI Light Italic" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="82.0" layoutY="31.0">
+               <image>
+                  <Image url="@../ressources/yeux.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="ajouterSujet" layoutX="43.0" layoutY="103.0" mnemonicParsing="false" onAction="#ajouterSujet" prefHeight="30.0" prefWidth="16.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="updateForumBtn" layoutX="202.0" layoutY="103.0" mnemonicParsing="false" onAction="#modifierForum" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/update.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="48.0" fitWidth="62.0" layoutX="280.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/book.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="supprimerForumBtn" layoutX="12.0" layoutY="103.0" mnemonicParsing="false" onAction="#supprimerForum" prefHeight="30.0" prefWidth="16.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/file_delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

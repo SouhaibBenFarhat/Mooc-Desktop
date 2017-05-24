@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="paneData" prefHeight="635.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.mooc.controllers.EspaceAdminController">
+   <children>
+      <Label layoutX="439.0" layoutY="5.0" prefHeight="50.0" prefWidth="240.0" text="espace Admin" />
+      <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="425.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="liste des apprenants">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="liste des formateurs">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="liste des entreprises">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="table" layoutX="13.0" layoutY="67.0" onMouseClicked="#selectTable" prefHeight="463.0" prefWidth="448.0">
+        <columns>
+            <TableColumn fx:id="idCol" prefWidth="75.0" visible="false" />
+          <TableColumn fx:id="usernameCol" prefWidth="221.0" text="nom formateur" />
+          <TableColumn fx:id="emailCol" prefWidth="226.0" text="email formateur" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSupprimer" layoutX="486.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="supprimer" visible="false" />
+      <Button fx:id="listForum" layoutX="486.0" layoutY="102.0" mnemonicParsing="false" text="Forum" />
+   </children>
+</AnchorPane>

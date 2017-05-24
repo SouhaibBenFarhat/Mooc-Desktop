@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="559.0" styleClass="page1" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="22.0" prefHeight="471.0" prefWidth="517.0">
+         <children>
+            <AnchorPane layoutX="90.0" layoutY="108.0" prefHeight="195.0" prefWidth="407.0" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="108.0">
+               <children>
+                  <TextField fx:id="usernameText" layoutX="94.0" layoutY="27.0" prefHeight="33.0" prefWidth="305.0" promptText="Username" />
+                  <PasswordField fx:id="passwordText" layoutX="94.0" layoutY="69.0" prefHeight="33.0" prefWidth="305.0" promptText="Password" />
+                   <TextField fx:id="emailText" layoutX="93.0" layoutY="112.0" prefHeight="33.0" prefWidth="305.0" promptText="Email" />
+                  <Text fx:id="lblUsername" fill="WHITE" layoutX="9.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblPassword" fill="WHITE" layoutX="9.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password  :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblEmail" fill="WHITE" layoutX="9.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email  :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnInscription" layoutX="276.0" layoutY="212.0" mnemonicParsing="false" onAction="#inscriptionApprenantAction" prefHeight="33.0" prefWidth="123.0" text="Sign In" />
+                 
+                  <Label fx:id="label" layoutX="88.0" layoutY="266.0" prefHeight="34.0" prefWidth="316.0" />
+                  <TextField fx:id="imageText" editable="false" layoutX="92.0" layoutY="158.0" prefHeight="34.0" prefWidth="305.0" promptText="photo" />
+                  <Text fx:id="lblPhoto" fill="WHITE" layoutX="7.0" layoutY="179.46875" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo  :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnChoisir" layoutX="409.0" layoutY="158.0" mnemonicParsing="false" onAction="#btnChoisirAction" prefHeight="30.0" prefWidth="123.0" text="Choisir" />
+               </children>
+            </AnchorPane>
+            <Text fx:id="lblUserLogin" fill="WHITE" layoutX="188.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Apprenant" wrappingWidth="279.9296875">
+               <font>
+                  <Font name="Segoe UI Light" size="36.0" />
+               </font>
+            </Text>
+            <HBox layoutX="489.0" layoutY="-19.0" stylesheets="@../css/winDec.css">
+               <children>
+                  <Button fx:id="minimize" mnemonicParsing="false" onAction="#menuminimize" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="-fx-border-color: #0097A7;" styleClass="decoration-button-minimize" text="" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="close" mnemonicParsing="false" onAction="#menuClose" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="-fx-border-color: #0097A7;" styleClass="decoration-button-close" text="" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnLogout" layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#menuLogout" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/buttonCircle.css">
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/arrowLeft.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

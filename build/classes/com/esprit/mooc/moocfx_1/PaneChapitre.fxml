@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="358.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane fx:id="paneChap" layoutX="7.0" layoutY="7.0" prefHeight="135.0" prefWidth="345.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label layoutX="79.0" layoutY="55.0" prefHeight="19.0" prefWidth="92.0" text="Réaliser par : " textAlignment="RIGHT" textFill="#00aec1">
+                    <font>
+                        <Font name="Berlin Sans FB" size="13.0" />
+                    </font>
+                </Label>
+            <Button fx:id="meschapitres" layoutX="288.0" layoutY="1.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="33.0" style="-fx-background-color: #fff;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="37.0">
+                     <image>
+                        <Image url="@../ressources/meschapitres.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="79.0" layoutY="26.0" prefHeight="19.0" prefWidth="92.0" text="Titre : " textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="76.0" layoutY="18.0">
+               <image>
+                  <Image url="@../ressources/experience-icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="titrechap" layoutX="115.0" layoutY="26.0" prefHeight="19.0" prefWidth="92.0" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="vchap" layoutX="190.0" layoutY="69.0" mnemonicParsing="false" onAction="#voirchap" prefHeight="64.0" prefWidth="149.0" style="-fx-background-color: #fff;" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="voirchapitre" fitHeight="55.0" fitWidth="138.0">
+                     <image>
+                        <Image url="@../ressources/LireSuiteChap.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="70.0" fitWidth="115.0" layoutX="230.0">
+               <image>
+                  <Image url="@../ressources/effect.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="supprimerchapitre" fitHeight="30.0" fitWidth="35.0" layoutX="310.0" layoutY="1.0" onMouseClicked="#supprimerchap">
+               <image>
+                  <Image url="@../ressources/supprimerchap.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="3.0" layoutY="95.0" mnemonicParsing="false" onAction="#editerchap" prefHeight="38.0" prefWidth="35.0" style="-fx-background-color: #fff;">
+               <graphic>
+                  <ImageView fx:id="editer" fitHeight="30.0" fitWidth="35.0" onMouseClicked="#editerchap">
+                     <image>
+                        <Image url="@../ressources/editchap.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Pane>
+      <Label fx:id="createurchap" layoutX="164.0" layoutY="63.0" prefHeight="19.0" prefWidth="169.0" textAlignment="RIGHT" textFill="#00aec1">
+         <font>
+            <Font name="Berlin Sans FB" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="86.0" text="Voir le chapitre" textFill="#00aec1">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="1033.0" style="-fx-background-color: #00aec1;" styleClass="mainFxmlClass" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="832.0" layoutY="14.0" text="realise par" />
+      <Label fx:id="Labelauteur" layoutX="909.0" layoutY="14.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="317.0" text="Description" />
+      <WebView fx:id="browserDes" layoutX="14.0" layoutY="334.0" prefHeight="83.0" prefWidth="580.0" style="-fx-opacity: 1;" stylesheets="@../css/Metro-UI.css" />
+      <WebView fx:id="browserobj" layoutX="14.0" layoutY="448.0" prefHeight="83.0" prefWidth="580.0" style="-fx-opacity: 1;" stylesheets="@../css/Metro-UI.css" />
+      <Label layoutX="14.0" layoutY="424.0" text="Objectif" />
+      <ListView fx:id="lvChapitre" layoutX="681.0" layoutY="79.0" prefHeight="453.0" prefWidth="290.0" />
+      <MediaView fx:id="video" fitHeight="200.0" fitWidth="200.0" layoutX="14.0" layoutY="106.0" />
+      <TextFlow layoutX="417.0" layoutY="23.0" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER">
+         <children>
+            <Label fx:id="LabelTitreCours" alignment="TOP_RIGHT" nodeOrientation="LEFT_TO_RIGHT" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font name="Bell MT Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </TextFlow>
+      <Label fx:id="labelDate" layoutX="114.0" layoutY="15.0" text="date" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogout" layoutX="16.0" layoutY="20.0" mnemonicParsing="false" onAction="#ConvertCourPDF" prefHeight="49.0" prefWidth="81.0" style="-fx-background-color: #00aec1;">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/pdfIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="date" layoutX="13.0" layoutY="15.0" text="date de creation" />
+   </children>
+</AnchorPane>

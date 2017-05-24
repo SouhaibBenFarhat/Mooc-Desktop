@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="1128.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../ressources/css/login.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="step1cours" layoutX="9.0" layoutY="11.0" prefHeight="595.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" visible="false">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="11.0" prefHeight="574.0" prefWidth="963.0" visible="false">
+               <children>
+                  <ImageView layoutX="2.0" layoutY="141.0">
+                     <image>
+                        <Image url="@../ressources/step1cours.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="78.0" layoutY="14.0" prefHeight="561.0" prefWidth="848.0" style="-fx-background-color: #14b5c8; -fx-background-radius: 7;">
+                     <children>
+                        <AnchorPane layoutX="2.0" layoutY="2.0" prefHeight="557.0" prefWidth="844.0" style="-fx-background-radius: 7; -fx-background-color: #fff;" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="11.0" prefHeight="574.0" prefWidth="963.0">
+               <children>
+                  <ImageView layoutX="2.0" layoutY="141.0">
+                     <image>
+                        <Image url="@../ressources/step1cours.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="78.0" layoutY="14.0" prefHeight="561.0" prefWidth="848.0" style="-fx-background-color: #14b5c8; -fx-background-radius: 7;">
+                     <children>
+                        <AnchorPane layoutX="2.0" layoutY="2.0" prefHeight="557.0" prefWidth="844.0" style="-fx-background-radius: 7; -fx-background-color: #fff;">
+                           <children>
+                              <Label layoutX="227.0" layoutY="94.0" text="Titre cours : " textFill="#14b5c8">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="102.0" fitWidth="91.0" layoutX="6.0" layoutY="442.0">
+                                 <image>
+                                    <Image url="@../ressources/141074504194747.gif" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="tf_titreCours" layoutX="306.0" layoutY="90.0" prefHeight="25.0" prefWidth="306.0" promptText="Titre...." />
+                              <Label layoutX="227.0" layoutY="136.0" text="Discipline :" textFill="#14b5c8">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cb_discipline" layoutX="306.0" layoutY="132.0" prefHeight="25.0" prefWidth="306.0" promptText="Discipline..." />
+                              <ComboBox fx:id="cb_niveau" layoutX="306.0" layoutY="172.0" prefHeight="25.0" prefWidth="306.0" promptText="Niveau...." />
+                              <Label layoutX="227.0" layoutY="176.0" text="Niveau:" textFill="#14b5c8">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tf_duree" layoutX="306.0" layoutY="212.0" prefHeight="25.0" prefWidth="306.0" promptText="Duree..." />
+                              <Label layoutX="227.0" layoutY="216.0" text="Duree:" textFill="#14b5c8">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="E_introduction" layoutX="306.0" layoutY="252.0" prefHeight="140.0" prefWidth="306.0" promptText="Introduction..." />
+                              <Label layoutX="227.0" layoutY="256.0" text="Introduction:" textFill="#14b5c8">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="E_description" layoutX="306.0" layoutY="407.0" prefHeight="140.0" prefWidth="306.0" promptText="Description..." />
+                              <Label layoutX="227.0" layoutY="410.0" text="Description:" textFill="#14b5c8">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="165.0" fitWidth="158.0" layoutX="13.0" layoutY="-20.0">
+                                 <image>
+                                    <Image url="@StylzzZ%20(822).png" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="723.0" layoutY="524.0" mnemonicParsing="false" onAction="#gotostep2" prefHeight="25.0" prefWidth="105.0" stylesheets="@../css/login.css" text="Suivant" />
+                              <Label layoutX="333.0" layoutY="14.0" prefHeight="17.0" prefWidth="398.0" text="Ajouter cours :" textFill="#14b5c8" underline="true">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="step2cours" layoutX="9.0" layoutY="11.0" prefHeight="595.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="11.0" prefHeight="574.0" prefWidth="963.0">
+               <children>
+                  <ImageView layoutX="2.0" layoutY="141.0">
+                     <image>
+                        <Image url="@../ressources/step2cours.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="78.0" layoutY="14.0" prefHeight="561.0" prefWidth="848.0" style="-fx-background-color: #14b5c8; -fx-background-radius: 7;">
+                     <children>
+                        <AnchorPane layoutX="2.0" layoutY="2.0" prefHeight="557.0" prefWidth="844.0" style="-fx-background-radius: 7; -fx-background-color: #fff;" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="11.0" prefHeight="574.0" prefWidth="963.0">
+               <children>
+                  <ImageView layoutX="2.0" layoutY="141.0">
+                     <image>
+                        <Image url="@../ressources/step2cours.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="78.0" layoutY="14.0" prefHeight="561.0" prefWidth="848.0" style="-fx-background-color: #14b5c8; -fx-background-radius: 7;">
+                     <children>
+                        <AnchorPane layoutX="2.0" layoutY="2.0" prefHeight="557.0" prefWidth="844.0" style="-fx-background-radius: 7; -fx-background-color: #fff;">
+                           <children>
+                              <Label layoutX="227.0" layoutY="94.0" text="Objectif:" textFill="#14b5c8">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="102.0" fitWidth="91.0" layoutX="6.0" layoutY="442.0">
+                                 <image>
+                                    <Image url="@../ressources/eleph.jpg" />
+                                 </image>
+                              </ImageView>
+                              <TextArea fx:id="E_objectif" layoutX="306.0" layoutY="92.0" prefHeight="140.0" prefWidth="306.0" promptText="Objectif..." />
+                              <ImageView fitHeight="165.0" fitWidth="158.0" layoutX="13.0" layoutY="-20.0">
+                                 <image>
+                                    <Image url="@../ressources/elephcours.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="retouretape1cours" layoutX="723.0" layoutY="520.0" mnemonicParsing="false" onAction="#retourstep1" prefHeight="25.0" prefWidth="105.0" stylesheets="@../css/login.css" text="Retour" />
+                              <TextArea fx:id="E_Prerequis" layoutX="306.0" layoutY="252.0" prefHeight="140.0" prefWidth="306.0" promptText="Prerequis..." />
+                              <Label layoutX="227.0" layoutY="254.0" text="Prerequis :" textFill="#14b5c8">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="227.0" layoutY="414.0" text="Video:" textFill="#14b5c8">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tf_video1" disable="true" layoutX="306.0" layoutY="410.0" prefHeight="30.0" prefWidth="306.0" promptText="Video.." />
+                              <Button fx:id="btnAjout" layoutX="723.0" layoutY="483.0" mnemonicParsing="false" onAction="#FinishAddCour" prefHeight="25.0" prefWidth="105.0" stylesheets="@../css/login.css" text="Ajouter" />
+                              <Button layoutX="610.0" layoutY="410.0" maxHeight="30.0" minHeight="30.0" mnemonicParsing="false" onAction="#BrowseVideo" prefHeight="30.0" prefWidth="105.0" stylesheets="@../css/login.css" text="Parcourir" />
+                              <Button fx:id="modifBtn" layoutX="724.0" layoutY="483.0" mnemonicParsing="false" onAction="#FinishModifierCour" prefHeight="25.0" prefWidth="105.0" stylesheets="@../css/login.css" text="Modifier" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

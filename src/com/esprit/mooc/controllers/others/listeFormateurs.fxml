@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="830.0" styleClass="page1" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="56.0" stylesheets="@../css/Metro-UI.css">
+         <children>
+            
+            <TableView fx:id="tableFormateur" layoutX="2.0" layoutY="43.0" onMouseClicked="#selectTable" prefHeight="479.0" prefWidth="696.0" stylesheets="@../css/Metro-UI.css">
+              <columns>
+                  <TableColumn fx:id="idCol" prefWidth="75.0" visible="false" />
+                <TableColumn fx:id="usernameCol" prefWidth="358.0" text="nom Formateur" />
+                <TableColumn fx:id="emailCol" prefWidth="336.0" text="email Formateur" />
+              </columns>
+            </TableView>
+            <TextField fx:id="rechercheText" onInputMethodTextChanged="#rechercherFormateurAction" onKeyPressed="#rechercherFormateurAction" onKeyReleased="#rechercherFormateurAction" onKeyTyped="#rechercherFormateurAction" prefHeight="30.0" prefWidth="363.0" promptText="Rechercher" />
+            <Button fx:id="btnDesactiver" layoutX="808.0" layoutY="264.0" mnemonicParsing="false" onMouseClicked="#desactiverFormateurAction" prefHeight="34.0" prefWidth="175.0" styleClass="arrow-button" text="Desactiver" visible="false" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableAutreFormateurs" layoutX="12.0" layoutY="53.0" onMouseClicked="#selectTable" prefHeight="479.0" prefWidth="696.0" stylesheets="@../css/Metro-UI.css" visible="false">
+         <columns>
+            <TableColumn fx:id="idCol1" prefWidth="75.0" visible="false" />
+            <TableColumn fx:id="usernameCol1" prefWidth="358.0" text="nom Formateur" />
+            <TableColumn fx:id="emailCol1" prefWidth="336.0" text="email Formateur" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

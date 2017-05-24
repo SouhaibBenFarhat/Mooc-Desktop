@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane prefHeight="615.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" pickOnBounds="false" prefHeight="506.0" prefWidth="738.0" snapToPixel="true" style="-fx-background-color: #0097A7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+          <AnchorPane fx:id="paneData" layoutX="200.0" layoutY="89.0" minHeight="0.0" minWidth="0.0" prefHeight="545.0" prefWidth="1225.0" style="-fx-background-color: #0097A7;" />
+            <HBox layoutX="892.0" layoutY="2.0" stylesheets="@../css/winDec.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                <Button fx:id="fullscreen" mnemonicParsing="false" onAction="#menufullscreen" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="" styleClass="decoration-button-fullscreen" text="" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="minimize" mnemonicParsing="false" onAction="#menuminimize" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="" styleClass="decoration-button-minimize" text="" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="maximize" mnemonicParsing="false" onAction="#menuMaximized" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-maximize" text="" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="close" mnemonicParsing="false" onAction="#menuClose" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-close" text="" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <rotationAxis>
+                    <Point3D />
+                  </rotationAxis>
+                </Button>
+               </children>
+            </HBox>
+            <VBox layoutX="26.0" layoutY="89.0" prefHeight="671.0" prefWidth="161.0">
+               <children>
+                  <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#menuLogout" prefHeight="70.0" prefWidth="161.0" style="-fx-background-color: #8C0095; -fx-border-color: #ffffff; -fx-border-width: 4;">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ressources/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnProfil" graphicTextGap="3.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#monProfilAction" prefHeight="70.0" prefWidth="161.0" style="-fx-background-color: #056e9e; -fx-border-color: ffffff; -fx-border-width: 4;">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ressources/profil.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets bottom="2.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnListFormateurAAccepter" mnemonicParsing="false" onAction="#ListFormateur" prefHeight="70.0" prefWidth="161.0" style="-fx-background-color: AC193D; -fx-border-color: #ffffff; -fx-border-width: 4;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ressources/valid_formateur.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="2.0" top="2.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnBibliotheque" mnemonicParsing="false" onAction="#ListCour" prefHeight="70.0" prefWidth="161.0" style="-fx-background-color: #008A00; -fx-border-color: ffffff; -fx-border-width: 4;">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ressources/validCour.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="2.0" top="2.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+            </VBox>
+            <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="1157.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/profil.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nomespace" layoutX="1198.0" layoutY="30.0" prefHeight="17.0" prefWidth="91.0" text="Membre Comite" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Light" size="13.0" />
+               </font>
+            </Label>
+<!--            <Label fx:id="lblClose" layoutX="1323.0" layoutY="14.0" prefHeight="30.0" prefWidth="25.0" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>-->
+        </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

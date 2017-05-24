@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="page1" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="entreprisePane" layoutX="194.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="740.0" visible="false">
+         <children>
+            <TextField fx:id="specialiteTextEntreprise" disable="true" layoutX="140.0" layoutY="162.0" prefHeight="33.0" prefWidth="183.0" promptText="Specialite" stylesheets="@../css/Metro-UI.css" />
+            <TextField fx:id="siteWebTextEntreprise" layoutX="141.0" layoutY="209.0" prefHeight="33.0" prefWidth="183.0" promptText="Site web" stylesheets="@../css/Metro-UI.css" />
+            <TextField fx:id="abreviationTextEntreprise" layoutX="486.0" layoutY="114.0" prefHeight="34.0" prefWidth="200.0" promptText="Abreviation" stylesheets="@../css/Metro-UI.css" />
+            <TextField fx:id="adresseTextEntreprise" layoutX="485.0" layoutY="65.0" prefHeight="34.0" prefWidth="200.0" promptText="Adresse" stylesheets="@../css/Metro-UI.css" />
+            <TextField fx:id="matriculeTextEntreprise" disable="true" editable="false" layoutX="486.0" layoutY="161.0" prefHeight="34.0" prefWidth="200.0" promptText="Matricule Fiscale" stylesheets="@../css/Metro-UI.css" />
+            <TextArea fx:id="descriptionTextEntreprise" layoutX="487.0" layoutY="249.0" prefHeight="158.0" prefWidth="200.0" stylesheets="@../css/Metro-UI.css" AnchorPane.rightAnchor="53.0" />
+            <TextField fx:id="raisonInscriptionTextEntreprise" disable="true" editable="false" layoutX="487.0" layoutY="208.0" prefHeight="34.0" prefWidth="200.0" promptText="Raison d'inscription" stylesheets="@../css/Metro-UI.css" />
+            <TextField fx:id="telTextEntreprise" layoutX="141.0" layoutY="254.0" prefHeight="33.0" prefWidth="183.0" promptText="Telephone" stylesheets="@../css/Metro-UI.css" />
+            <Text fx:id="lblSpecialiteEntreprise" fill="WHITE" layoutX="15.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialite :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblSiteWebEntreprise" fill="WHITE" layoutX="15.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site Web : ">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblNumeroTelEntreprise" fill="WHITE" layoutX="13.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblAbreviationEntreprise" fill="WHITE" layoutX="360.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Abreviation : ">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblAdresseEntreprise" fill="WHITE" layoutX="360.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse : ">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblPaysEntreprise" fill="WHITE" layoutX="24.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pays : ">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblMatriculeEntreprise" fill="WHITE" layoutX="357.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule Fiscale : ">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblRaisonEntreprise" fill="WHITE" layoutX="364.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raison : ">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblDescriptionEntreprise" fill="WHITE" layoutX="361.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblTypeEntreprise" fill="WHITE" layoutX="20.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type : ">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="emailTextEntreprise" disable="true" editable="false" layoutX="140.0" layoutY="115.0" opacity="0.94" prefHeight="34.0" prefWidth="183.0" promptText="Email" stylesheets="@../css/Metro-UI.css" />
+            <Hyperlink layoutX="915.0" layoutY="218.0" textFill="#f8f4f4" />
+            <Text fx:id="lblEmailEntreprise" fill="WHITE" layoutX="28.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblUsernameEntreprise" fill="WHITE" layoutX="16.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernameTextEntreprise" disable="true" editable="false" layoutX="140.0" layoutY="65.0" prefHeight="33.0" prefWidth="183.0" promptText="Username" stylesheets="@../css/Metro-UI.css" />
+            <Button fx:id="btnModifierEntreprise" layoutX="315.0" layoutY="528.0" mnemonicParsing="false" onAction="#modifierEntrepriseAction" prefHeight="33.0" prefWidth="123.0" text="Modifier" />
+            <ComboBox fx:id="comboType" layoutX="142.0" layoutY="301.0" prefHeight="27.0" prefWidth="183.0" stylesheets="@../css/Metro-UI.css" />
+            <ComboBox fx:id="comboPays" layoutX="142.0" layoutY="349.0" prefHeight="27.0" prefWidth="183.0" stylesheets="@../css/Metro-UI.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="formateurPane" layoutX="166.0" layoutY="14.0" prefHeight="564.0" prefWidth="1035.0" visible="false">
+         <children>
+            <TextField fx:id="usernameText" disable="true" editable="false" layoutX="94.0" layoutY="44.0" prefHeight="33.0" prefWidth="305.0" promptText="Username" stylesheets="@../css/Metro-UI.css" />
+            <TextField fx:id="emailText" disable="true" editable="false" layoutX="94.0" layoutY="88.0" prefHeight="33.0" prefWidth="305.0" promptText="Email" stylesheets="@../css/Metro-UI.css" />
+            <AnchorPane layoutY="44.0" prefHeight="502.0" prefWidth="844.0">
+               <children>
+                  <Text fx:id="lblSpecialite" fill="WHITE" layoutX="424.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialite  :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblGooglePlus" fill="WHITE" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Google Plus :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblSiteWeb" fill="WHITE" layoutX="9.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site Web :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="googlePlusText" layoutX="95.0" layoutY="99.0" prefHeight="34.0" prefWidth="305.0" promptText="Goolgle Plus" stylesheets="@../css/Metro-UI.css" />
+                  <TextField fx:id="siteWebText" layoutX="94.0" layoutY="158.0" prefHeight="34.0" prefWidth="305.0" promptText="Site Web" stylesheets="@../css/Metro-UI.css" />
+                  <Text fx:id="lblBiographie" fill="WHITE" layoutX="6.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biographie :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblMiniBiographie" fill="WHITE" layoutX="416.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mini Biographie :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblAPropos" fill="WHITE" layoutX="422.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A Propos :">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="biographieText" layoutX="95.0" layoutY="228.0" prefHeight="158.0" prefWidth="305.0" stylesheets="@../css/Metro-UI.css" />
+                  <TextArea fx:id="miniBiographieText" layoutX="550.0" layoutY="50.0" prefHeight="143.0" prefWidth="305.0" stylesheets="@../css/Metro-UI.css">
+                     <cursor>
+                        <Cursor fx:constant="DISAPPEAR" />
+                     </cursor>
+                  </TextArea>
+                  <TextArea fx:id="aProposText" layoutX="550.0" layoutY="222.0" prefHeight="158.0" prefWidth="305.0" stylesheets="@../css/Metro-UI.css" />
+                  <Button fx:id="btnModifierFormateur" layoutX="414.0" layoutY="454.0" mnemonicParsing="false" onAction="#modifierFormateurAction" prefHeight="33.0" prefWidth="123.0" text="Modifier" />
+                  <TextField fx:id="specialiteText" editable="false" layoutX="550.0" layoutY="5.0" prefHeight="34.0" prefWidth="305.0" promptText="Specialite" stylesheets="@../css/Metro-UI.css" />
+               </children>
+            </AnchorPane>
+            <Text fx:id="lblUsername" fill="WHITE" layoutX="9.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblEmail" fill="WHITE" layoutX="9.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email  :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="label" layoutX="263.0" layoutY="254.48046875" prefHeight="17.0" prefWidth="144.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imageUser" fitHeight="150.0" fitWidth="158.0" layoutX="4.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="paneApprenant" layoutX="166.0" layoutY="14.0" prefHeight="129.0" prefWidth="422.0" visible="false">
+         <children>
+            <TextField fx:id="usernameText1" disable="true" editable="false" layoutX="94.0" layoutY="27.0" prefHeight="33.0" prefWidth="305.0" promptText="Username" stylesheets="@../css/Metro-UI.css" />
+            <TextField fx:id="emailText1" disable="true" editable="false" layoutX="94.0" layoutY="71.0" prefHeight="33.0" prefWidth="305.0" promptText="Email" stylesheets="@../css/Metro-UI.css" />
+            <Text fx:id="lblUsername1" fill="WHITE" layoutX="9.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblEmail1" fill="WHITE" layoutX="9.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email  :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="label1" layoutX="263.0" layoutY="237.48046875" prefHeight="17.0" prefWidth="144.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="493.0" styleClass="page1" stylesheets="@../css/addSubject.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="97.0" layoutY="25.0" prefHeight="327.0" prefWidth="493.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txtTitreSujet" layoutX="131.0" layoutY="134.0" prefHeight="33.0" prefWidth="305.0" promptText="Titre..." stylesheets="@../css/Metro-UI.css" />
+            <TextField fx:id="txtSousTitreSujet" layoutX="131.0" layoutY="176.0" prefHeight="33.0" prefWidth="305.0" promptText="Sous-titre..." stylesheets="@../css/Metro-UI.css" />
+            <Text fx:id="lblWelcome" fill="#00aec1" layoutX="49.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publier un sujet ">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblUsername" fill="#00aec1" layoutX="47.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblPassword" fill="#00aec1" layoutX="47.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sous-Titre">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnModification" layoutX="314.0" layoutY="432.0" mnemonicParsing="false" onAction="#modifierSujetAction" prefHeight="33.0" prefWidth="123.0" text="Valider" />
+            <Text fill="#00ace1" layoutX="9.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elephants">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblClose" layoutX="472.0" layoutY="5.0" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label" layoutX="182.0" layoutY="250.0" />
+            <ImageView fx:id="image2" fitHeight="59.0" fitWidth="132.0" layoutX="346.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../ressources/mesSujets.png" />
+            </image>    
+            </ImageView>
+            <Button layoutX="186.0" layoutY="274.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="177.0" visible="false">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <TextArea fx:id="contenuSujet" layoutX="131.0" layoutY="222.0" prefHeight="200.0" prefWidth="305.0" styleClass="text-input" stylesheets="@../css/Metro-UI.css" />
+            <Text fx:id="txtModification" fill="#00aec1" layoutX="49.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modification">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

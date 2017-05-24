@@ -1,0 +1,84 @@
+.myDialog{
+    -fx-background-color:  white;
+
+}
+.myDialog > *.button-bar > *.container{
+    -fx-background-color:  white;
+}
+.myDialog > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00aec1; 
+}
+.myDialog:header *.header-panel{
+    -fx-background-color:  white;
+}
+.myDialog:header *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+    -fx-fill:  #ffffff;
+}
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-style: none; 
+    -fx-background-radius: 0;
+    -fx-border-color : #f4f4f4;
+    -fx-border-width:2;
+    -fx-background-color: #0097A7;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: #00aec1;
+}
+
+.button:pressed, .button:default:hover:pressed
+{
+    -fx-padding: 5 22 5 22;   
+    -fx-border-style: none; 
+    -fx-background-radius: 0;
+    -fx-border-color : #f4f4f4;
+    -fx-border-width:2;
+    -fx-background-color: #0097A7;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+.button:focused
+{
+    -fx-padding: 5 22 5 22;   
+    -fx-border-style: none; 
+    -fx-background-radius: 0;
+    -fx-border-color : #00aec1;
+    -fx-border-width:0;
+    -fx-background-color: #00aec1;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 14px;
+    -fx-text-fill: white; 
+}
+
+.button:disabled, .button:default:disabled
+{
+    -fx-opacity: 0.4;
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #212121;
+}
+
+.button:default
+{
+    -fx-background-color: #00aec1;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover{
+    -fx-background-color: #00aec1;
+}

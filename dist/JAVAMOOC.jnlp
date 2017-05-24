@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JAVAMOOC.jnlp">
+  <information>
+    <title>JAVAMOOC</title>
+    <vendor>kods</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JAVAMOOC.jar" size="17058393" download="eager" />
+    <jar href="lib\DJNativeSwing-SWT.jar" size="440228" download="eager" />
+    <jar href="lib\DJNativeSwing.jar" size="91779" download="eager" />
+    <jar href="lib\dj-nativeswing-swt-1.0.2.jar" size="553683" download="eager" />
+    <jar href="lib\hibernate-core-4.3.11.Final.jar" size="5283651" download="eager" />
+    <jar href="lib\itext-pdfa-5.5.9.jar" size="117922" download="eager" />
+    <jar href="lib\itext-xtra-5.5.9-sources.jar" size="128778" download="eager" />
+    <jar href="lib\itextpdf-5.5.9.jar" size="2287148" download="eager" />
+    <jar href="lib\jsoup-1.6.0.jar" size="279211" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="827921" download="eager" />
+    <jar href="lib\restfb-1.5.jar" size="167752" download="eager" />
+    <jar href="lib\restfb-1.6.2.jar" size="98569" download="eager" />
+    <jar href="lib\spring-beans-3.0.5.RELEASE.jar" size="555410" download="eager" />
+    <jar href="lib\spring-context-4.2.0.RELEASE.jar" size="1084471" download="eager" />
+    <jar href="lib\spring-core-3.0.5.RELEASE.jar" size="382442" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JAVAMOOC" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.esprit.mooc.Test.MOOCfx_1"  name="JAVAMOOC" />
+  <update check="always"/>
+</jnlp>

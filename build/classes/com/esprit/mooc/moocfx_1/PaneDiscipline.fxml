@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0" prefWidth="213.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="paneForum" layoutX="7.0" layoutY="7.0" prefHeight="121.0" prefWidth="198.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 3;">
+         <children>
+            <Label fx:id="disciplineName" layoutX="49.0" layoutY="9.0" prefHeight="19.0" prefWidth="123.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font></Label>
+           <Button fx:id="afficherDisciplineBtn" layoutX="1.0" layoutY="86.0" mnemonicParsing="false" onAction="#afficherDiscipline" prefHeight="30.0" prefWidth="41.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/info.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fx:id="image" fitHeight="45.0" fitWidth="41.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/subject.png" />
+               </image></ImageView>
+            <Label fx:id="datePublication" layoutX="79.0" layoutY="33.0" prefHeight="19.0" prefWidth="116.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="nbCours" layoutX="81.0" layoutY="57.0" prefHeight="19.0" prefWidth="41.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Segoe UI" size="11.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="48.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/date.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="72.0" layoutX="6.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/book.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="48.0" layoutX="150.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" rotate="-170.9">
+               <image>
+                  <Image url="@../ressources/rainbow.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D x="100.0" z="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <Button fx:id="modifierDisciplineBtn" layoutX="104.0" layoutY="88.0" mnemonicParsing="false" onAction="#modifierDiscipline" prefHeight="19.0" prefWidth="92.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/modifsou.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="358.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="paneForum" layoutX="7.0" layoutY="7.0" prefHeight="135.0" prefWidth="345.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label fx:id="disciplineName" layoutX="80.0" layoutY="9.0" prefHeight="19.0" prefWidth="256.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+           <Button layoutX="240.0" layoutY="89.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="92.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/readmore.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fx:id="image" fitHeight="78.0" fitWidth="68.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/subject.png" />
+               </image></ImageView>
+            <Label fx:id="datePublication" layoutX="111.0" layoutY="33.0" prefHeight="19.0" prefWidth="116.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="nbCours" layoutX="111.0" layoutY="53.0" prefHeight="19.0" prefWidth="201.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="81.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/date.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="81.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/nbmessage.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

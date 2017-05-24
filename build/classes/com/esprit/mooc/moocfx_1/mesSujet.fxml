@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="733.0" prefWidth="1224.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="14.0" layoutY="78.0" prefHeight="300.0" prefWidth="550.0" style="-fx-background-color: #0097A7;" stylesheets="@../css/Metro-UI.css">
+        <content>
+          <AnchorPane fx:id="paneData" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="549.0" prefWidth="534.0" style="-fx-background-color: #0097A7;" stylesheets="@../css/Metro-UI.css" />
+        </content>
+      </ScrollPane>
+      <Label fx:id="sujetName1" layoutX="643.0" layoutY="17.0" prefHeight="42.0" prefWidth="107.0" text="Description:" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light Italic" size="18.0" />
+         </font>
+      </Label>
+      <WebView fx:id="browser" layoutX="591.0" layoutY="78.0" prefHeight="225.0" prefWidth="486.0" style="-fx-opacity: 1;" stylesheets="@../css/Metro-UI.css" />
+      <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="591.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/Desc.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="sujetName11" layoutX="70.0" layoutY="15.0" prefHeight="42.0" prefWidth="107.0" text="Mes Sujets" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light Italic" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="45.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/mesSujets.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="messageList" layoutX="14.0" layoutY="445.0" prefHeight="178.0" prefWidth="550.0" style="-fx-background-color: #0097A7;" stylesheets="@../css/listView.css" />
+      <WebView fx:id="messageBrowser" layoutX="591.0" layoutY="444.0" prefHeight="178.0" prefWidth="486.0" style="-fx-opacity: 1;" stylesheets="@../css/Metro-UI.css" />
+      <Label fx:id="sujetName12" layoutX="640.0" layoutY="393.0" prefHeight="42.0" prefWidth="107.0" text="Messages" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light Italic" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="591.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/message.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="sujetName121" layoutX="70.0" layoutY="393.0" prefHeight="42.0" prefWidth="107.0" text="Reponses" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light Italic" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="31.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/reponse.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="778.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/date.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="datePublication" layoutX="820.0" layoutY="398.0" prefHeight="34.0" prefWidth="189.0" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="761.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/title.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="titreSujet" layoutX="796.0" layoutY="17.0" prefHeight="42.0" prefWidth="268.0" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light Italic" size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rechercheTxt" layoutX="382.0" layoutY="20.0" onKeyPressed="#chercherMesSujets" onKeyReleased="#chercherMesSujets" onKeyTyped="#chercherMesSujets" prefHeight="28.0" prefWidth="166.0" promptText="Recherche..." styleClass="text-field">
+         <font>
+            <Font name="Segoe UI Light" size="11.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../css/textField.css" />
+            <URL value="@../css/login.css" />
+         </stylesheets></TextField>
+   </children>
+</AnchorPane>

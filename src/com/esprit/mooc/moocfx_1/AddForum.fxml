@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="384.0" prefWidth="493.0" styleClass="page1" stylesheets="@../css/addSubject.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="2.0" layoutY="2.0" prefHeight="375.0" prefWidth="491.0" AnchorPane.bottomAnchor="106.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <TextField fx:id="txtTitreForum" layoutX="131.0" layoutY="134.0" prefHeight="33.0" prefWidth="305.0" promptText="Titre..." stylesheets="@../css/Metro-UI.css" />
+            <Text fx:id="lblWelcome" fill="#00aec1" layoutX="49.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lancer Un Forum">
+               <font>
+                  <Font name="Segoe UI Light" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblTitreForum" fill="#00aec1" layoutX="47.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnAjout" layoutX="314.0" layoutY="308.0" mnemonicParsing="false" onAction="#publierForumAction" prefHeight="33.0" prefWidth="123.0" text="Lancer" />
+            <Text fx:id="forumName" fill="#00ace1" layoutX="9.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elephants">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblClose" layoutX="472.0" layoutY="5.0" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label" layoutX="182.0" layoutY="250.0" />
+            <ImageView fx:id="image2" fitHeight="59.0" fitWidth="132.0" layoutX="346.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../ressources/mesIntervention.png" />
+            </image>    
+            </ImageView>
+            <Button layoutX="186.0" layoutY="274.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="177.0" visible="false">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <ComboBox fx:id="disciplineCombo" layoutX="131.0" layoutY="186.0" prefWidth="150.0" promptText="Discipline..." />
+            <Text fx:id="messageTxt" fill="#de0000" layoutX="131.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aucune discipline disponible...">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

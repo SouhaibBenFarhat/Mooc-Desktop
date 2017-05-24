@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="179.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="paneForum" layoutX="7.0" layoutY="7.0" prefHeight="135.0" prefWidth="166.0" style="-fx-background-radius: 5; -fx-background-color: #FFFFFF;" styleClass="ra">
+         <children>
+            <Label fx:id="sujetName" layoutX="31.0" layoutY="22.0" prefHeight="19.0" prefWidth="129.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Segoe UI Light" size="13.0" />
+               </font></Label>
+           <Button fx:id="btnAfficherSujet" layoutX="1.0" layoutY="103.0" mnemonicParsing="false" onAction="#afficherSujet" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/readmore.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fx:id="image" fitHeight="19.0" fitWidth="19.0" layoutX="6.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/subject.png" />
+               </image></ImageView>
+            <Label fx:id="datePublication" layoutX="31.0" layoutY="45.0" prefHeight="19.0" prefWidth="116.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Segoe UI Light" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="nbMessage" layoutX="31.0" layoutY="65.0" prefHeight="19.0" prefWidth="129.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Segoe UI Light" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="publierPar" layoutX="32.0" layoutY="86.0" prefHeight="19.0" prefWidth="129.0" text="Username" textAlignment="RIGHT" textFill="#00aec1">
+               <font>
+                  <Font name="Segoe UI Light" size="13.0" />
+               </font>
+            </Label>
+                  <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="7.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="6.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/date.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="6.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/nbmessage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="afficherInformationBtn" layoutX="126.0" layoutY="100.0" mnemonicParsing="false" onAction="#afficherInformationSujet" prefHeight="33.0" prefWidth="30.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/details.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="supprimerSujetBtn" layoutX="132.0" mnemonicParsing="false" onAction="#supprimerSujet" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="modifierSujetBtn" layoutX="94.0" layoutY="100.0" mnemonicParsing="false" onAction="#modifierSujet" prefHeight="33.0" prefWidth="30.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/update.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
