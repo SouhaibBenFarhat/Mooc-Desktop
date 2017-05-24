@@ -6,8 +6,11 @@ The courses available in our platform are sent by coaches specialized in the fie
 
 #### How it work
 -import project to your IDE
+
 -create a new database with the name of "moocv5"
+
 -import this file <moocv5.sql> available in parent folder inside the database already created
+
 -run the application
 
 
