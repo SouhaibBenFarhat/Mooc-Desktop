@@ -1,7 +1,7 @@
 # Mooc Desktop
 ### Description
 
-World Elephent is a desktop application connected to the Internet, allowing students to browse hundreds of courses available to improve their level in computer development and more specifically in mobile development
+World Elephant is a desktop application connected to the Internet, allowing students to browse hundreds of courses available to improve their level in computer development and more specifically in mobile development
 The courses available in our platform are sent by coaches specialized in the field
 
 #### How it work
